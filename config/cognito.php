@@ -59,6 +59,7 @@ return [
     'cognito_user_fields'   => [
         'name' => 'name',
         'email' => 'email',
+        'password' => 'password',
     ],
 
     /*
@@ -97,7 +98,7 @@ return [
     | This option controls the SSO settings into the application.
     |
     */
-    'add_missing_local_user_sso'    => env('AWS_COGNITO_ADD_LOCAL_USER', false),
+    'add_missing_local_user_sso'    => env('AWS_COGNITO_ADD_LOCAL_USER', true),
     'delete_user'                   => env('AWS_COGNITO_DELETE_USER', false),
 
     // Package configurations
